@@ -23,7 +23,7 @@ import { AdminModule } from './admin/admin.module';
     AuthModule,
     BlogModule,
     MongooseModule.forRoot(
-      'mongodb+srv://admin:blogadmin123@cluster0.f2qqsol.mongodb.net/?retryWrites=true&w=majority'
+      ${{ secrets.MONGODB_URI }}
     ),
     CommonModule,
     JwtModule.register({
